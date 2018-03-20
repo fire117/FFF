@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2% 2% 0 2%;
+
+}
+.sq {
+    background: #f93;
+    border-radius: 15px;
+    width: 30%;
+    padding-bottom: 30%;
+    margin-bottom: 2%;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background: #fff;
+    border: 1px solid #f93;
+    padding: 2% 0;
+    outline: none;
+
+}
+#start {
+    margin-bottom: 2%;
+}
+#start:hover, #stop:hover{
+    background: #f93;
+    color: #fff;
+}

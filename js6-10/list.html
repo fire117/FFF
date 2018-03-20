@@ -1,0 +1,106 @@
+<div ui-view=""></div>
+
+<!--列表页-->
+<div class="list container-fluid">
+    <div class="search clearfix">
+        <form class="form-horizontal" novalidate>
+            <div class="form-group col-sm-6">
+                <label class="col-sm-2 control-label">标题</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" ng-model="title">
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="col-sm-2 control-label">创建者</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" ng-model="author">
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="col-sm-2 control-label">时间</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control"
+                           uib-datepicker-popup ng-model="startAt" is-open="popup1.opened"
+                           datepicker-options="dateOptions1" ng-required="true" ng-click="open1()"
+                           close-text="关闭" current-text="今天" clear-text="清除">
+
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="col-sm-2 control-label">——</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control"
+                           uib-datepicker-popup ng-model="endAt" is-open="popup2.opened"
+                           datepicker-options="dateOptions2" ng-required="true" ng-click="open2()"
+                           close-text="关闭" current-text="今天" clear-text="清除" >
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="col-sm-2 control-label">类型</label>
+                <div class="col-sm-10">
+                    <select ng-model="type" class="form-control" ng-options="type.value as type.label for type in types">
+
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="col-sm-2 control-label">状态</label>
+                <div class="col-sm-10">
+                    <select ng-model="status" class="form-control" ng-options="st.value as st.label for st in statuses">
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-2 pull-right">
+                <button class="btn btn-danger" ng-click="clear()">清空</button>
+                <button class="btn btn-success" ng-click="search()">搜索</button>
+            </div>
+        </form>
+    </div>
+    <div class="dat">
+        <div style="padding: 10px 0!important;">
+            <div class="col-sm-2 pull-left"><span class="" style="font-weight: bold">article列表</span></div>
+            <div class="col-sm-1 pull-right"><button ng-click="GoAdd()" class="btn btn-success btn-xs">+新增</button></div>
+        </div>
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>img</th>
+                <th>名称</th>
+                <th>类型</th>
+                <th>发布时间</th>
+                <th>修改时间</th>
+                <th>发布者</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            <tr ng-repeat="item in article">
+                <td>{{ $index + 1 }}</td>
+                <td><img ng-src="{{ item.img}}" style="max-width: 80px; height: auto; margin: auto"></td>
+                <td>{{item.title}}</td>
+                <td>{{item.type | a}}</td>
+                <td>{{item.createAt | date:"yyyy-MM-dd HH:mm:ss"}}</td>
+                <td>{{item.updateAt | date:"yyyy-MM-dd HH:mm:ss"}}</td>
+                <td>{{item.author}}</td>
+                <td>{{item.status | b}}</td>
+                <td>
+                    <a ng-class="[item.status==1]" ng-click="upOrDownItem(item.id,item.status)">
+                        {{ item.status==1?"上线":"下线" }}
+                    </a>
+                    <a class="" ng-click="edit(item.id)">编辑</a>
+                    <a class="" ng-click="deleteItem(item.id)">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="pgn">
+        <p>每行显示<input type="text" ng-model="size" class="size">条</p>
+        <ul uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize"
+            class="pagination-md" boundary-links="true" rotate="false" ng-change="pageChanged()">
+        </ul>
+        <p>去第几<input type="text" ng-model="GoPage" class="page">页</p>
+        <button class="btn btn-success" ng-click="submit()">确定</button>
+    </div>
+</div>
+
+

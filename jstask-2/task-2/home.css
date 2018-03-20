@@ -1,0 +1,55 @@
+
+.wrap {
+    max-width: 500px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.g-hd {
+    background: #29bde0 url(images/ed1.png) no-repeat 0.15rem center;
+    background-size: 0.2rem 0.15rem;
+    height: .5rem;
+}
+.g-bd {
+    padding: .13rem .18rem 1.1rem .18rem;
+    text-align: center;
+    background: #f0f0f0;
+}
+.g-bd p {
+    padding: .2rem;
+    background: #fff url(images/ed2.png) no-repeat 98% 0.12rem;
+    background-size: .2rem .36rem;
+    color: #999;
+    border: 1px solid #c9c9c9;
+    margin-bottom: .13rem;
+    font-size: 0.18rem;
+}
+.g-bd ul {
+    background: #fff url(images/ed3.png) no-repeat 98% 56%;
+    background-size: .2rem .36rem;
+}
+.m-tt {
+    padding: .15rem;
+    border-bottom: 1px solid #fdd793;
+    margin-bottom: .15rem;
+    color: #fc3;
+    font-size: 0.18rem;
+}
+.m-ed button {
+    width: 80%;
+    padding: .2rem 0;
+    background: #29bde0;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.m-us {
+    margin: .1rem 0;
+    color: #666;
+}
+
+.btn {
+    display: block;
+    background: red;
+}

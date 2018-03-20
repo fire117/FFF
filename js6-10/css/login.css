@@ -1,0 +1,67 @@
+
+.wrap {
+    height: 100vh;
+    background: url(../img/bg.png) no-repeat center center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.loginStyle {
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*z-index: 10;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*height: 3rem;*/
+    /*margin: auto;*/
+    /*width: 4rem;*/
+    /*background: #ccc;*/
+    padding: .1rem .2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 3rem;
+    background: rgba(204,204,204,0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginStyle h3 {
+    color: #03a9f4;
+    font-weight: bold;
+}
+
+.loginStyle input {
+    width: 80%;
+}
+.tips1, .tips2 {
+    color: red;
+}
+#log-in {
+    margin-top: .1rem;
+    padding: .04rem;
+    background: #03a9f4;
+    color: #fff;
+    border: none;
+}
+
+#user {
+    background: #fff url(../img/uname.png) no-repeat .1rem center;
+    background-size: .15rem .13rem;
+    margin: .1rem 0;
+    text-indent: .35rem;
+    padding: .05rem 0;
+}
+#password {
+    background: #fff url(../img/pwd.png) no-repeat .1rem center;
+    background-size: .15rem .13rem;
+    margin: .1rem 0;
+    text-indent: .35rem;
+    padding: .05rem 0;
+}

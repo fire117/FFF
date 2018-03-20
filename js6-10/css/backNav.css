@@ -1,0 +1,126 @@
+/*菜单*/
+.backNav {
+    float: left;
+    width: 250px;
+    padding-bottom: 3000px;
+    margin-bottom: -3000px;
+    background: #2e394c;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+.backNav a {
+    text-decoration: none!important;
+}
+
+.backNav i {
+    font-size: 12px!important;
+}
+.leader {
+    margin: 0 .15rem;
+}
+.panel {
+    border: none;
+    cursor: pointer;
+}
+.panel-group {
+    margin-bottom: 0;
+    border-top: 1px solid #242d3c;
+}
+.panel-heading {
+    background: #2e394c!important;
+    color: #fff!important;
+}
+.panel-body {
+    color: #5fc0cd;
+    background: #000;
+    padding: 10px 0 5px 0;
+    border-top: none!important;
+}
+.panel-body p {
+    text-align: center;
+}
+
+
+/*欢迎*/
+.page-wrap {
+    float: left;
+    padding-bottom: 3000px;
+    margin-bottom: -3000px;
+    width: calc(100% - 250px);
+    background: #f5f5f5;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+/*列表页和详情页*/
+.list {
+    float: left;
+    padding-bottom: 3000px;
+    margin-bottom: -3000px;
+    width: calc(100% - 250px);
+    overflow: hidden;
+    background: #f5f5f5;
+}
+.add {
+    padding: .2rem;
+    float: left;
+    padding-bottom: 3000px;
+    margin-bottom: -3000px;
+    width: calc(100% - 250px);
+    overflow: hidden;
+    background: #f5f5f5;
+}
+.add-title {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: .05rem;
+    font-weight: bold;
+    margin-bottom: .1rem;
+}
+.dtl {
+    background: #fff;
+}
+
+.top p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #fff;
+    margin-bottom: 0;
+    padding: 10px 20px 10px 0;
+    font-size: .18rem;
+}
+.admin {
+    margin: 0 .3rem;
+}
+
+.search {
+    margin-top: 15px;
+    background: #fff;
+    padding: .2rem 0;
+}
+.dat {
+    margin-top: 15px;
+    background: #fff;
+
+}
+.pgn {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.page, .size {
+    width: .4rem;
+    text-align: center;
+}
+
+td a {
+    font-size: 13px!important;
+    cursor: pointer;
+    text-decoration: none!important;
+}
+th ,td {
+    text-align: center;
+}

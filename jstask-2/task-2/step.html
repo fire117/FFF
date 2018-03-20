@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>step</title>
+    <link rel="stylesheet" href="step.css">
+    <link rel="stylesheet" href="common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="wrap">
+        <div class="g-hd">
+            <img src="images/back.png"><span>法官日记</span><img src="images/show-close.png">
+        </div>
+        <div class="g-bd">
+            <div class="m-ct">
+                <p class="time">第一天</p>
+                <ul>
+                    <li>杀手杀人</li>
+                    <li>亡灵发表遗言</li>
+                    <li>玩家依次发言</li>
+                    <li>投票</li>
+                </ul>
+                <button id="btn">天黑请闭眼</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn=document.getElementById('btn');
+        btn.onclick=function gotoNext() {
+            window.location.href='kill.html';
+        }
+    </script>
+</body>
+</html>

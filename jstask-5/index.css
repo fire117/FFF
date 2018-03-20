@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+h2 {
+    margin-bottom: .2rem;
+    color: #03a9f4;
+}
+#tips1, #tips2 {
+    margin: .05rem 0;
+    opacity: 0;
+}
+input {
+    border: none;
+}
+button {
+    border: none;
+    color: #fff;
+    padding: .1rem 0;
+    background: #03a9f4;
+    margin-top: .2rem;
+}
+html {
+    font-size: 625%;
+}
+body {
+    margin: 0;
+    background: url(img/login-bg.png) no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    height: 100vh;
+}
+#main {
+    padding: .2rem ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 3rem;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input {
+    padding: .1rem 0;
+    /*margin: .1rem 0;*/
+    text-indent: .35rem;
+}
+#text {
+    background: #fff url(img/username.png) no-repeat .1rem center;
+    background-size: .15rem .13rem;
+}
+#pwd {
+    background: #fff url(img/password.png) no-repeat .1rem center;
+    background-size: .15rem .13rem;
+}

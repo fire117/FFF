@@ -1,0 +1,115 @@
+/*全局reset*/
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form {
+    margin:0;
+}
+ol,ul {
+    margin:0;
+    padding:0;
+}
+a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+html {
+    font-size: 625%;
+}
+body {
+    background: #29bde0;
+    height: 100%;
+}
+/*header开始*/
+.header {
+    background: #29bde0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*header-title开始*/
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .05rem .1rem .05rem .1rem;
+}
+.header-title img{
+    width: .25rem;
+    height: .25rem;
+}
+.header-title span {
+    font-size: .22rem;
+    color: #fff;
+}
+/*header-vote开始*/
+.header-vote {
+    padding: .1rem 0 .1rem 5vw;
+    background: #b9e9f5 url(../img/3.png) no-repeat 98% center;
+    font-size: .17rem;
+}
+/*header-icon开始*/
+.header-icon {
+    padding: .2rem 0 .05rem 7vw;
+    letter-spacing: .01rem;
+    background: url(../img/4.png) no-repeat 7vw top;
+    color: #fff;
+}
+/*main开始*/
+.main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top:1.418rem;
+    bottom: 0.792rem;
+    overflow: auto;
+}
+/*square开始*/
+.square {
+    border: .7vw solid #fff;
+    width: 26%;
+    height: 26vw;
+    margin-bottom: 8vw;
+    font-size: 4vw;
+}
+.square .th1 {
+    background: #f5c97b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.square .th2 {
+    background: #83b09a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.square .th3 img {
+    width: 5.2vw;
+    height: 5.2vw;
+}
+.square .th3 {
+    padding-top: 2vw;
+    display: none;
+}
+.square:hover .th3 {
+    display: flex;
+    justify-content:space-between;
+}
+/*footer开始*/
+.footer {
+    background: #29bde0;
+    text-align: center;
+    position: fixed;
+    bottom: 4vw;
+    width: 100%;
+}
+.footer p{
+    background: #fbb435;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3vw 0;
+}

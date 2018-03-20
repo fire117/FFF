@@ -1,0 +1,24 @@
+html {
+    font-size: 625%;
+}
+body {
+
+}
+p {
+    margin: 0;
+}
+
+th, td {
+    vertical-align: middle!important;
+}
+li {
+    list-style: none;
+}
+input {
+    outline: none;
+    /*border: none;*/
+}
+button {
+    outline: none;
+    border: none;
+}

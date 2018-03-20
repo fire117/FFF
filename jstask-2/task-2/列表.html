@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="role"></ul>
+<button id="btn">点击设置1</button>
+<button id="btn2">点击设置2</button>
+
+<script>
+    var btn = document.getElementById('btn');
+    var btn2 = document.getElementById('btn2');
+    var arr = ['平民', '平民', '平民', '杀手', '平民', '杀手'];
+    var list = '';
+    btn.onclick = function () {
+        for (var i = 0; i < arr.length; i++) {
+            list += "<li>" + arr[i] + "</li>";
+        }
+        document.getElementById('role').innerHTML = list;
+    };
+    btn2.onclick=function () {
+        var a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var random = function(array) {
+            return array.sort(function(){return Math.random() > 0.5});
+        };
+        console.log(random(a));
+    }
+</script>
+</body>
+</html>

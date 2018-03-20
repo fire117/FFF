@@ -1,0 +1,181 @@
+* {
+    outline: none;
+}
+.wrap {
+    max-width: 500px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #f0f0f0;
+}
+/* 头部 */
+
+.m-hd {
+    background: #29bde0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.m-hd img {
+    transform: scale(.6);
+}
+
+.m-ft {
+    background: #fff;
+    margin: .1rem;
+    padding: .3rem .1rem;
+}
+
+.m-ft p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: .2rem;
+    margin-left: .1rem;
+}
+
+.m-md {
+    display: flex;
+    margin: .1rem;
+}
+
+.m-group {
+    margin: 0 .1rem;
+    background: #fff;
+    padding: .05rem .1rem;
+}
+.m-group p {
+    padding: .1rem 0;
+    border-bottom: 2px solid #f0f0f0;
+    color: #ccc;
+
+}
+
+/*玩家配比*/
+
+.m-md-left {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 5%;
+    border-right: 1px solid #ccc;
+}
+
+.m-md-left p {
+    width: .2rem;
+    font-size: .2rem;
+    word-wrap: break-word;
+
+}
+/* input区域 */
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input#user {
+    width: .3rem;
+    height: .2rem;
+    text-align: center;
+    background: #f4f5f5;
+    color: #fab344;
+    border: none;
+    font-size: 18px;
+}
+
+input#range {
+    width: 80%;
+    margin: 0 .1rem;
+}
+/*清除滑动条的默认样式  自定义*/
+
+input[type=range] {
+    -webkit-appearance: none;
+    height: 5px;
+    background-color: #fcc671;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: url(images/sq.png) no-repeat;
+    width: .37rem;
+    height: .23rem;
+}
+
+
+.m-md-right {
+    background: #fbfbfb;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+/*用户显示区域*/
+
+#userShow {
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+}
+
+#userShow li {
+    display: flex;
+    align-items: center;
+    margin: .1rem;
+}
+
+#userShow i {
+    width: .06rem;
+    height: .06rem;
+    background: #29bde0;;
+    margin: .1rem;
+}
+
+#userShow span {
+    width: .06rem;
+    height: .06rem;
+    background: #fbb435;
+    margin: .1rem;
+}
+
+.m-md-right button {
+    height: 20%;
+    border: 1px solid #ccc;
+    background: #fbfbfb;
+    color: #29bde0;
+    font-size: 18px;
+
+}
+/*+号按钮*/
+
+#btnAdd {
+    background: url(images/add.png) no-repeat center;
+    width: .2rem;
+    height: .2rem;
+    border: 1px solid #ccc;
+}
+/*-号按钮*/
+
+#btnSub {
+    background: url(images/sub.png) no-repeat center;
+    width: .2rem;
+    height: .2rem;
+    border: 1px solid #ccc;
+}
+.goto {
+    margin: 0 .1rem;
+}
+.goto button {
+    width: 100%;
+    background: #fab344;
+    color: #fff;
+    border: none;
+    padding: .1rem 0;
+    font-size: 18px;
+}

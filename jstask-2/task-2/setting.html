@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="m-hd">
+        <img src="images/back.png"><span>参数设置</span><img src="images/help.png">
+    </div>
+    <div class="m-md">
+        <div class="m-md-left">
+            <p>玩家配比</p>
+        </div>
+        <div class="m-md-right">
+            <ul id="userShow">
+
+            </ul>
+            <button id="userSet">点击设置</button>
+        </div>
+    </div>
+    <div class="m-group">
+        <p>水民词组</p>
+        <p>幽灵词组</p>
+    </div>
+    <div class="m-ft">
+        <p>玩家<input type="text" value="6" id="user">人数</p>
+        <div class="slider">
+            <button id="btnSub"></button>
+            <input type="range" value="6" id="range" min="6" max="18" step="1">
+            <button id="btnAdd"></button>
+        </div>
+    </div>
+    <div class="goto">
+        <button id="gotoNext">去发牌</button>
+    </div>
+</div>
+<script src="setting.js"></script>
+</body>
+</html>

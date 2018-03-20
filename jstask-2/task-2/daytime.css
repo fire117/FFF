@@ -1,0 +1,52 @@
+.wrap {
+    max-width: 500px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #29bde0;
+    /*padding-bottom: .5rem;*/
+}
+.g-hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #74d4eb;
+    font-size: .2rem;
+    padding: .05rem .1rem;
+    color: #fff;
+}
+.g-hd img {
+    transform: scale(0.7);
+}
+.main {
+    text-align: center;
+}
+.main img {
+    transform: scale(0.7);
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+.foot img {
+    transform: scale(0.5);
+}
+.foot button {
+    /*margin: .1rem 0;*/
+    padding: .1rem 0;
+    border: none;
+    color: #fff;
+    font-size: .2rem;
+}
+#main-content {
+    margin: .2rem 0;
+    color: #fff;
+    font-size: .2rem;
+}
+.btn1 {
+    background: #24a7c6;
+}
+#gotoVote {
+    background: #fbb435;
+    margin-bottom: .2rem;
+}
