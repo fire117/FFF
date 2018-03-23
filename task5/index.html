@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" id="text">
+<input type="password" id="pwd">
+<button id="btn">登录</button>
+<p id="tips"></p>
+<h1 id=""></h1>
+<script>
+    $(function () {
+        $("#btn").click(function(){
+            $.ajax({
+                type:"post",
+                url:"/carrots-admin-ajax/a/login?name="+$("#text").val()+"&pwd="+$("#pwd").val(),
+                dataType:"json",
+                success:function(data){
+                    if(data.code===0) {
+                        //window.location.href = 'http://dev.admin.carrots.ptteng.com/';
+                        alert(data.message);
+                    } else if(data.code===-5003||data.code===-5001) {
+                        alert(data.message);
+                    }
+                },
+                error:function(){
+                    alert("错误！！！");
+                }
+            })
+        })
+    })
+</script>
+<!--<script>-->
+    <!--var userName = document.getElementById('text');-->
+    <!--var userPwd = document.getElementById('pwd');-->
+    <!--var btn = document.getElementById('btn');-->
+    <!--var tips = document.getElementById('tips');-->
+    <!--btn.onclick=function () {-->
+        <!--var request = new XMLHttpRequest();-->
+        <!--request.open('POST','/carrots-admin-ajax/a/login');-->
+        <!--var data = "name=" + userName.value + "&pwd=" + userPwd.value;-->
+        <!--request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");-->
+        <!--request.send(data);-->
+        <!--request.onreadystatechange = function () {-->
+            <!--if (request.readyState === 4 && request.status === 200) {-->
+                <!--console.log(request.responseText);//打印json字符串-->
+                <!--var peo = JSON.parse(request.responseText);-->
+                <!--console.log(peo);//打印json对象  数组-->
+                <!--if (peo.code === 0) {-->
+                    <!--window.location.href = 'http://dev.admin.carrots.ptteng.com/';-->
+                <!--} else if(peo.code === -5003 || peo.code === -5004) {-->
+                    <!--tips.innerHTML='账号或密码错误，请确认之后再输入';-->
+                <!--}-->
+            <!--}-->
+        <!--};-->
+    <!--}-->
+<!--</script>-->
+</body>
+</html>

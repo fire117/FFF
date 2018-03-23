@@ -57,18 +57,7 @@ userName.oninput = function () {
         tips1.style.opacity = 0;
     }
 };
-// userPwd.oninput = function () {
-//     if (userPwd.value.length < 5 && userPwd.value.length > 1) {
-//         userPwd.style.outlineColor = 'red';
-//         tips2.innerHTML = '请输入最少4个字符哟';
-//         tips2.style.opacity = 1;
-//         tips2.style.color = 'red';
-//
-//     } else {
-//         userPwd.style.outlineColor = '#fff';
-//         tips2.style.opacity = 0;
-//     }
-// };
+
 
 
 
