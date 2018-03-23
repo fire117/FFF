@@ -31,6 +31,28 @@
                 }
             })
         })
+        $("#btn").click(function(){
+            $.ajax({
+                type:"POST",
+                url:"/carrots-admin-ajax/a/login",
+                data:{
+                    name:$("#text").val(),
+                    pwd:$("#pwd").val()
+                },
+                dataType:"json",
+                success:function(data){
+                    if(data.code===0) {
+                        //window.location.href = 'http://dev.admin.carrots.ptteng.com/';
+                        alert(data.message);
+                    } else if(data.code===-5003||data.code===-5001) {
+                        alert(data.message);
+                    }
+                },
+                error:function(){
+                    alert("错误！！！");
+                }
+            })
+        })
     })
 </script>
 <!--<script>-->
